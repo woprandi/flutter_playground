@@ -32,6 +32,8 @@ class _MyAppState extends State<MyApp> {
           value = s;
         });
       }
+    } catch(ex) {
+
     } finally {
       print("disconnected");
       _timer = Timer(Duration(seconds: 10), () => _connect());
